@@ -13,7 +13,7 @@ by Francesco Scanni
 
 ## Demo
 
-https://francescoscanni.github.io/Job-AI-Bias---Responsive-remake/
+https://francescoscanni.github.io/JobRadar-AI-bias-after-image-generation/
 
 
 ## Documentation
