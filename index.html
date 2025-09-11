@@ -193,7 +193,7 @@
         <div class="w-[50%] h-[90%] bg-[#f2f2f2] rounded-l-[40px] py-[30px] p-[20px] flex flex-col gap-3">
             <h1 class="text-[18px] text-[#000000] font-bold          lg:text-[42px]">Image Analysis on Models</h1>
             <p class="text-[#000000] text-[13px] font-semibold             lg:text-[28px]">Check the Drive folder containing the images by clicking on the icon.</p>
-            <a href="https://drive.google.com/drive/u/0/home"><img class="w-[40px] h-[40px]      lg:w-[120px] lg:h-[120px]" src="static\media\images\drive.png" alt=""></a>
+            ><img onclick="drive()" class="w-[40px] h-[40px]      lg:w-[120px] lg:h-[120px]" src="static\media\images\drive.png" alt="">
         </div>
         <div class="w-[50%] bg-[#f2f2f2] h-[90%] rounded-r-[40px] flex flex-col justify-center items-center gap-4">
             <p class="text-[#000000] text-[13px] font-semibold         lg:text-[28px]">All images used in our work are in the attached Drive folder, organized by job categories and AI generation tools, documenting the biases found in AI models.</p>
@@ -226,6 +226,10 @@
     <script>
         function downloadFile() {
             window.location.href = "static/media/files/Bias nella generative AI (8).xlsx";
+        }
+
+        function drive() {
+            window.location.href = "static/media/files/Canva-20250911T174615Z-1-001.zip";
         }
     </script>
 </body>
