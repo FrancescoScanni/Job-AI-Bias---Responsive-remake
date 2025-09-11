@@ -51,9 +51,11 @@
         </div>
     </div>
 
-    <div class="w-[100px] h-[45px] rounded-2xl bg-[#693367] flex justify-center items-center text-white text-[16px] font-semibold">
+    <a href="#here">
+        <div class="w-[100px] h-[45px] rounded-2xl bg-[#693367] flex justify-center items-center text-white text-[16px] font-semibold">
         <input type="button" value="Find out">
     </div>
+    </a>
     </div>
 
 
@@ -63,9 +65,12 @@
             <p class="text-[18px] text-[#595858]">EDITED BY FRANCESCO SCANNI</p>
             <h1 class="text-[42px] font-bold leading-tight">Artificial Biases: Bias<br> in AI-Generated Images</h1>
             <p class="text-[20px] font-semibold pr-[20px]">Generative artificial intelligence models often reflect biases related to gender, ethnicity, and social roles. This work explores the origins of these distortions and conducts statistical analyses aimed at dismantling such patterns.</p>
-            <div class="w-[100px] h-[60px] rounded-2xl bg-[#693367] flex justify-center items-center text-white text-[16px] font-semibold">
+            <a href="#here">
+                <div class="w-[100px] h-[60px] rounded-2xl bg-[#693367] flex justify-center items-center text-white text-[16px] font-semibold">
                 <input type="button" value="Find out">
             </div>
+            </a>
+            
         </div>
         <div class="w-[40%] h-[100%] flex justify-end">
             <img class="rounded-[40px] h-[100%]" src="static\media\bias.jpeg" alt="">
@@ -78,17 +83,17 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="static\media\images\icon.jpg" />
-                    <p class="font-bold text-lg pt-[30px]">Me</p>
+                    <img src="static\media\images\me.jpg" />
+                    <p class="font-bold text-lg pt-[30px]">Me (no that's not)</p>
                 </div>
                 <div class="swiper-slide">
-                    <img src="static\media\images\icon.jpg" />
-                    <p class="font-bold text-lg pt-[30px]">Me</p>
+                    <img src="static\media\images\john.jpg" />
+                    <p class="font-bold text-lg pt-[30px]">John</p>
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="static\media\images\icon.jpg" />
-                    <p class="font-bold text-lg py-[30px]">Me</p>
+                    <img src="static\media\images\Carlos.jpg" />
+                    <p class="font-bold text-lg py-[30px]">Lucas</p>
                 </div>
                 
             </div>
@@ -102,8 +107,8 @@
     <div class="w-[100%] h-[50vh] pb-[30px] px-[15px] gap-2 flex justify-center items-center        lg:hidden">
         <div class="w-[60%] h-[90%] bg-[#f2f2f2] rounded-[40px] p-[20px] flex flex-col gap-8">
             <p class="text-[#000000] text-[13px] font-semibold">Check the Excel dataset with all information collected and analyzed by our class, including real examples, observed variables, and key results.</p>
-            <div class="w-[100px] h-[45px] rounded-2xl bg-[#693367] flex justify-center items-center text-white text-[16px] font-semibold">
-                <input type="button" value="Donwload">
+            <div onclick="downloadFile()" class="w-[100px] h-[45px] rounded-2xl bg-[#693367] flex justify-center items-center text-white text-[16px] font-semibold">
+                <input type="button" onclick="downloadFile()" value="Donwload">
             </div>
         </div>
         <div class="w-[40%] h-[90%] rounded-[40px] flex items-center">
@@ -114,7 +119,7 @@
     <div class="hidden lg:flex w-[100%] h-[75vh] flex justify-between p-[40px] gap-4">
         <div class="w-[45%] h-[100%] bg-[#f2f2f2] rounded-[40px] shadow-lg p-[30px] flex flex-col justify-center gap-4   xl:gap-8">
             <p class="text-[28px] font-semibold pr-[20px]">Check the Excel dataset with all the information collected and analyzed by our class. It contains real examples, observed variables, and useful results to better understand the studied phenomenon.</p>
-            <div class="w-[100px] h-[60px] rounded-2xl bg-[#693367] flex justify-center items-center text-white text-[16px] font-semibold">
+            <div onclick="downloadFile()"  class="w-[100px] h-[60px] rounded-2xl bg-[#693367] flex justify-center items-center text-white text-[16px] font-semibold">
                 <input type="button" value="Donwload">
             </div>
         </div>
@@ -123,7 +128,7 @@
         </div>
     </div>
 
-
+    <div id="here"></div>
     <!--Analysis - mob-->
     <div class="mt-[30px] bg-[#f2f2f2] flex flex-col items-center py-[50px] px-[30px] gap-5   lg:hidden">
         <h1 class="text-[28px] text-[#000000] font-bold">Post-analysis results</h1>
@@ -218,5 +223,10 @@
 
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        function downloadFile() {
+            window.location.href = "static/media/files/Bias nella generative AI (8).xlsx";
+        }
+    </script>
 </body>
 </html>
